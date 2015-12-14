@@ -1,0 +1,10 @@
+tasks:
+- rbd:
+    all:
+       img_name: img1
+       img_size: 10240
+       fs_type: xfs
+- workunit:
+    clients:
+        client.0:
+        - suites/fio.sh

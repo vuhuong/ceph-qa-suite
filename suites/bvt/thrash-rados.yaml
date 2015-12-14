@@ -1,0 +1,13 @@
+overrides:
+  ceph:
+    log-whitelist:
+    - wrongly marked me down
+tasks:
+- thrashosds:
+    op_delay: 30
+    clean_interval: 120
+    chance_down: .5
+- workunit:
+    clients:
+      all:
+      - rados/load-gen-mix-small.sh

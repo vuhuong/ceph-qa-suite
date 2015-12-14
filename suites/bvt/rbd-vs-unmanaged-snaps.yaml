@@ -1,0 +1,6 @@
+tasks:
+- workunit:
+    clients:
+      all:
+        - mon/rbd_snaps_ops.sh
+
